@@ -210,14 +210,14 @@ title: Color (Foreground/Background)
 <p>Set background to the gctheme.</p>
 <h4>Working example</h4>
 <div class="bg-cover well" data-bgimg="../../demos/tabs/img/investinourfuture.jpg">
-	<div class="bg-gctheme well mrgn-tp-md mrgn-bttm-md">
+	<div class="bg-gctheme text-white well mrgn-tp-md mrgn-bttm-md">
 		<h4 class="mrgn-tp-md">Heading</h4>
 		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ante nulla, condimentum at mollis et, scelerisque quis dolor. Suspendisse viverra in ante id consequat. Interdum et malesuada fames ac ante ipsum primis in faucibus. Fusce sodales ipsum vitae faucibus iaculis. Nulla in blandit dolor. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aenean non interdum sapien. Nunc non volutpat dui, in malesuada justo. Etiam feugiat accumsan pulvinar. Quisque blandit est in placerat finibus. Sed et ullamcorper velit. Nullam euismod iaculis ligula sit amet consequat. Aenean luctus quis nisi nec feugiat.</p>
 	</div>
 </div>
 <h4>Code sample</h4>
 <pre><code>&lt;div class="bg-cover well" data-bgimg="../../demos/tabs/img/investinourfuture.jpg"&gt;
-	&lt;div class="<strong>bg-gctheme</strong> well mrgn-tp-md mrgn-bttm-md"&gt;
+	&lt;div class="<strong>bg-gctheme</strong> text-white well mrgn-tp-md mrgn-bttm-md"&gt;
 		&lt;h4 class="mrgn-tp-md"&gt;Heading&lt;/h4&gt;
 		&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ante nulla, condimentum at mollis et, scelerisque quis dolor. Suspendisse viverra in ante id consequat. Interdum et malesuada fames ac ante ipsum primis in faucibus. Fusce sodales ipsum vitae faucibus iaculis. Nulla in blandit dolor. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aenean non interdum sapien. Nunc non volutpat dui, in malesuada justo. Etiam feugiat accumsan pulvinar. Quisque blandit est in placerat finibus. Sed et ullamcorper velit. Nullam euismod iaculis ligula sit amet consequat. Aenean luctus quis nisi nec feugiat.&lt;/p&gt;
 	&lt;/div&gt;
