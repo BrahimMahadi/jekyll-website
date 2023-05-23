@@ -63,12 +63,12 @@ title: Buttons
 <h4>Working example</h4>
 <p>Bootstrap provides different styles of buttons:</p>
 <div class="well">
-<button type="button" class="btn btn-default">Default</button>
-<button type="button" class="btn btn-primary">Primary</button>
-<button type="button" class="btn btn-success">Success</button>
-<button type="button" class="btn btn-info">Info</button>
-<button type="button" class="btn btn-warning">Warning</button>
-<button type="button" class="btn btn-danger">Danger</button>
+	<button type="button" class="btn btn-default">Default</button>
+	<button type="button" class="btn btn-primary">Primary</button>
+	<button type="button" class="btn btn-success">Success</button>
+	<button type="button" class="btn btn-info">Info</button>
+	<button type="button" class="btn btn-warning">Warning</button>
+	<button type="button" class="btn btn-danger">Danger</button>
 </div>
 <h4>Code sample</h4>
 <pre><code>&lt;div class="well"&gt;
@@ -84,15 +84,22 @@ title: Buttons
 	&lt;button type="button" class="btn <strong>btn-info</strong>"&gt;
 	Info
 	&lt;/button&gt;
-	&lt;button type="button" class="btn <strong>btn-Warning</strong>"&gt;
-	warning
+	&lt;button type="button" class="btn <strong>btn-warning</strong>"&gt;
+	Warning
 	&lt;/button&gt;
 	&lt;button type="button" class="btn <strong>btn-danger</strong>"&gt;
 	Danger
 	&lt;/button&gt;
-	
 &lt;/div&gt;</code></pre>
 
+<h3>Button groups</h3>
+<p>Group a series of buttons together on a single line with the button group</p>
+<h4>Working Example</h4>
+<div class="btn-group">
+	<button type="button" class="btn">Left</button>
+	<button type="button" class="btn">Middle</button>
+	<button type="button" class="btn">Right</button>
+</div>
 <h3>Text Colors</h3>
 <p>Set text to one of the Bootstrap colors.</p>
 <h4>Working example</h4>
