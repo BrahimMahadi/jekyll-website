@@ -92,7 +92,7 @@ title: Buttons
 	&lt;/button&gt;
 &lt;/div&gt;</code></pre>
 
-<h3>Button groups</h3>
+<h3>Button groups (Horizontal)</h3>
 <p>Group a series of buttons together on a single line with the button group</p>
 <h4>Working Example</h4>
 <div class="btn-group">
@@ -100,6 +100,42 @@ title: Buttons
 	<button type="button" class="btn">Middle</button>
 	<button type="button" class="btn">Right</button>
 </div>
+
+<h4>Code sample</h4>
+<pre><code>&lt;div class="<strong>btn-group<strong>"&gt;
+	&lt;button type="button" class="btn"&gt;
+	Left
+	&lt;/button&gt;
+	&lt;button type="button" class="btn"&gt;
+	Middle
+	&lt;/button&gt;
+	&lt;button type="button" class="btn"&gt;
+	Right
+	&lt;/button&gt;
+&lt;/div&gt;</code></pre>
+
+<h3>Button groups (Vertical)</h3>
+<p>Make a set of buttons appear vertically stacked rather than horizontally.</p>
+<h4>Working Example</h4>
+<div class="btn-group-vertical">
+	<button type="button" class="btn">Top</button>
+	<button type="button" class="btn">Middle</button>
+	<button type="button" class="btn">Bottom</button>
+</div>
+
+<h4>Code sample</h4>
+<pre><code>&lt;div class="<strong>btn-group-vertical<strong>"&gt;
+	&lt;button type="button" class="btn"&gt;
+	Top
+	&lt;/button&gt;
+	&lt;button type="button" class="btn"&gt;
+	Middle
+	&lt;/button&gt;
+	&lt;button type="button" class="btn"&gt;
+	Bottom
+	&lt;/button&gt;
+&lt;/div&gt;</code></pre>
+
 <h3>Text Colors</h3>
 <p>Set text to one of the Bootstrap colors.</p>
 <h4>Working example</h4>
