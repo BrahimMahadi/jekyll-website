@@ -62,16 +62,15 @@ title: Buttons
 <h3>Common Styles</h3>
 <h4>Working example</h4>
 <p>Bootstrap provides different styles of buttons:</p>
-<div class="well">
-	<button type="button" class="btn btn-default">Default</button>
-	<button type="button" class="btn btn-primary">Primary</button>
-	<button type="button" class="btn btn-success">Success</button>
-	<button type="button" class="btn btn-info">Info</button>
-	<button type="button" class="btn btn-warning">Warning</button>
-	<button type="button" class="btn btn-danger">Danger</button>
-</div>
+<button type="button" class="btn btn-default">Default</button>
+<button type="button" class="btn btn-primary">Primary</button>
+<button type="button" class="btn btn-success">Success</button>
+<button type="button" class="btn btn-info">Info</button>
+<button type="button" class="btn btn-warning">Warning</button>
+<button type="button" class="btn btn-danger">Danger</button>
+
 <h4>Code sample</h4>
-<pre><code>&lt;div class="well"&gt;
+<pre><code>
 	&lt;button type="button" class="btn <strong>btn-default</strong>"&gt;
 	Default
 	&lt;/button&gt;
@@ -89,8 +88,7 @@ title: Buttons
 	&lt;/button&gt;
 	&lt;button type="button" class="btn <strong>btn-danger</strong>"&gt;
 	Danger
-	&lt;/button&gt;
-&lt;/div&gt;</code></pre>
+	&lt;/button&gt;</code></pre>
 
 <h3>Button groups (Horizontal)</h3>
 <p>Group a series of buttons together on a single line with the button group</p>
@@ -134,6 +132,62 @@ title: Buttons
 	&lt;button type="button" class="btn"&gt;
 	Bottom
 	&lt;/button&gt;
+&lt;/div&gt;</code></pre>
+
+<h3>Button toolbar</h3>
+<p>Combine sets of button groups into button toolbars for more complex components.</p>
+<h4>Working Example</h4>
+<div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+  <div class="btn-group mr-2" role="group" aria-label="First group">
+    <button type="button" class="btn">1</button>
+    <button type="button" class="btn">2</button>
+    <button type="button" class="btn">3</button>
+    <button type="button" class="btn">4</button>
+  </div>
+  <div class="btn-group mr-2" role="group" aria-label="Second group">
+    <button type="button" class="btn">5</button>
+    <button type="button" class="btn">6</button>
+    <button type="button" class="btn">7</button>
+  </div>
+  <div class="btn-group" role="group" aria-label="Third group">
+    <button type="button" class="btn">8</button>
+  </div>
+</div>
+
+<h4>Code sample</h4>
+<pre><code>&lt;div class="<strong>btn-toolbar</strong>" role="toolbar" aria-label="Toolbar with button groups"&gt;
+	&lt;div class="btn-group" role="group" aria-label="First group"&gt;
+		&lt;button type="button" class="btn"&gt;
+		1
+		&lt;/button&gt;
+		&lt;button type="button" class="btn"&gt;
+		2
+		&lt;/button&gt;
+		&lt;button type="button" class="btn"&gt;
+		3
+		&lt;/button&gt;
+		&lt;button type="button" class="btn"&gt;
+		4
+		&lt;/button&gt;
+	&lt;/div&gt;
+
+	&lt;div class="btn-group" role="group" aria-label="Second group"&gt;
+		&lt;button type="button" class="btn"&gt;
+		5
+		&lt;/button&gt;
+		&lt;button type="button" class="btn"&gt;
+		6
+		&lt;/button&gt;
+		&lt;button type="button" class="btn"&gt;
+		7
+		&lt;/button&gt;
+	&lt;/div&gt;
+
+	&lt;div class="btn-group" role="group" aria-label="Third group"&gt;
+		&lt;button type="button" class="btn"&gt;
+		8
+		&lt;/button&gt;
+	&lt;/div&gt;
 &lt;/div&gt;</code></pre>
 
 <h3>Text Colors</h3>
