@@ -194,10 +194,17 @@ title: Buttons
 <p>Easily extend form controls by adding buttons, or button groups on either side of textual inputs, custom selects, and custom file inputs.</p>
 <h4>Working Example</h4>
 <div class="input-group mb-3">
-  <div class="input-group-prepend">
+  <div class="input-group-btn">
     <button class="btn" type="button">Button</button>
   </div>
-  <input type="text" class="form-control" placeholder="" aria-label="" aria-describedby="basic-addon1">
+  <input type="text" class="form-control" placeholder="" aria-label="">
+</div>
+
+<div class="input-group mb-3">
+  <input type="text" class="form-control" placeholder="" aria-label="">
+   <div class="input-group-btn">
+    <button class="btn" type="button">Button</button>
+  </div>
 </div>
 
 
