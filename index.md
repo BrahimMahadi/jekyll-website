@@ -195,10 +195,9 @@ title: Buttons
 <h4>Working Example</h4>
 <div class="input-group mb-3">
   <div class="input-group-prepend">
-    <button class="btn btn-outline-secondary" type="button">Button</button>
-	<input type="text" class="form-control" placeholder="" aria-label="" aria-describedby="basic-addon1">
+    <button class="btn" type="button">Button</button>
   </div>
-  
+  <input type="text" class="form-control" placeholder="" aria-label="" aria-describedby="basic-addon1">
 </div>
 
 
