@@ -197,15 +197,10 @@ title: Buttons
   <div class="input-group-prepend">
     <button class="btn btn-outline-secondary" type="button">Button</button>
   </div>
-  <input type="text" class="form-control" placeholder="" aria-label="">
+  <input type="text" class="form-control" placeholder="" aria-label="" aria-describedby="basic-addon1">
 </div>
 
-<div class="input-group mb-3">
-  <input type="text" class="form-control" placeholder="" aria-label="">
-  <div class="input-group-append">
-    <button class="btn btn-outline-secondary" type="button">Button</button>
-  </div>
-</div>
+
 
 <h3>Text Colors</h3>
 <p>Set text to one of the Bootstrap colors.</p>
