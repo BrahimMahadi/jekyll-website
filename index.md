@@ -190,6 +190,23 @@ title: Buttons
 	&lt;/div&gt;
 &lt;/div&gt;</code></pre>
 
+<h3>Input Groups</h3>
+<p>Easily extend form controls by adding buttons, or button groups on either side of textual inputs, custom selects, and custom file inputs.</p>
+<h4>Working Example</h4>
+<div class="input-group mb-3">
+  <div class="input-group-prepend">
+    <button class="btn btn-outline-secondary" type="button">Button</button>
+  </div>
+  <input type="text" class="form-control" placeholder="" aria-label="">
+</div>
+
+<div class="input-group mb-3">
+  <input type="text" class="form-control" placeholder="" aria-label="">
+  <div class="input-group-append">
+    <button class="btn btn-outline-secondary" type="button">Button</button>
+  </div>
+</div>
+
 <h3>Text Colors</h3>
 <p>Set text to one of the Bootstrap colors.</p>
 <h4>Working example</h4>
