@@ -197,16 +197,30 @@ title: Buttons
   <div class="input-group-btn">
     <button class="btn" type="button">Button</button>
   </div>
-  <input type="text" class="form-control" placeholder="" aria-label="">
+  <input type="text" class="form-control">
 </div>
 
 <div class="input-group mb-3">
-  <input type="text" class="form-control" placeholder="" aria-label="">
+  <input type="text" class="form-control">
    <div class="input-group-btn">
     <button class="btn" type="button">Button</button>
   </div>
 </div>
 
+<h4>Code Sample</h4>
+<pre><code>&lt;div class="<strong>input-group<strong> mb-3"&gt;
+	&lt;div class="input-group-btn"&gt;
+		&lt;button class="btn" type="button"&gt;Button&lt;/button&gt;
+	&lt;/div&gt;
+	&lt;input type="text" class="form-control"&gt;
+&lt;/div&gt;
+
+&lt;div class="<strong>input-group<strong> mb-3"&gt;
+	&lt;input type="text" class="form-control"&gt;
+	&lt;div class="input-group-btn"&gt;
+		&lt;button class="btn" type="button"&gt;Button&lt;/button&gt;
+	&lt;/div&gt;
+&lt;/div&gt;</code></pre>
 
 
 <h3>Text Colors</h3>
