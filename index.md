@@ -109,6 +109,10 @@ title: Buttons
 	Danger
 	&lt;/button&gt;</code></pre>
 
+<p>Links can also be styled to look like buttons</p>
+<h4>Working example</h4>
+<a href="" class="btn">Link</a>
+
 <h3>Button groups (Horizontal)</h3>
 <p>Group a series of buttons together on a single line with the button group</p>
 <h4>Working Example</h4>
