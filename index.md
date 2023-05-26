@@ -60,7 +60,7 @@ title: Buttons
 <h2 id="bootstrap">Bootstrap</h2>
 
 <h3>Button Sizes</h3>
-<p>Bootstrap provides 3 different size options: Small, Regular, and Large.</p>
+<p>Bootstrap provides 3 different size options: <code>btn-sm</code>, <code>btn</code>, and <code>btn-lg</code>.</p>
 <h4>Working example</h4>
 <button type="button" class="btn btn-sm">Small button</button>
 <button type="button" class="btn">Regular button</button>
@@ -71,7 +71,7 @@ title: Buttons
 	&lt;button type="button" class="btn <strong>btn-sm</strong>"&gt;
 	Small button
 	&lt;/button&gt;
-	&lt;button type="button" class="btn"&gt;
+	&lt;button type="button" class="<strong>btn</strong>"&gt;
 	Regular button
 	&lt;/button&gt;
 	&lt;button type="button" class="btn <strong>btn-lg</strong>"&gt;
@@ -109,7 +109,7 @@ title: Buttons
 	Danger
 	&lt;/button&gt;</code></pre>
 
-<p>Links can also be styled to look like buttons</p>
+<p>Links can also be styled with the <code>btn</code> class.</p>
 <h4>Working example</h4>
 <a href="" class="btn">Link</a>
 
@@ -118,7 +118,7 @@ title: Buttons
 </code></pre>
 
 <h3>Button groups (Horizontal)</h3>
-<p>Group a series of buttons together on a single line with the button group</p>
+<p>Group a series of buttons together on a single line with the <code>btn-group</code> class.</p>
 <h4>Working Example</h4>
 <div class="btn-group">
 	<button type="button" class="btn">Left</button>
@@ -140,7 +140,7 @@ title: Buttons
 &lt;/div&gt;</code></pre>
 
 <h3>Button groups (Vertical)</h3>
-<p>Make a set of buttons appear vertically stacked rather than horizontally.</p>
+<p>Make a set of buttons appear vertically stacked rather than horizontally with the <code>btn-group-vertical</code> class.</p>
 <h4>Working Example</h4>
 <div class="btn-group-vertical">
 	<button type="button" class="btn">Top</button>
@@ -162,7 +162,7 @@ title: Buttons
 &lt;/div&gt;</code></pre>
 
 <h3>Button toolbar</h3>
-<p>Combine sets of button groups into button toolbars for more complex components.</p>
+<p>Combine sets of button groups into button toolbars for more complex components with the <code>btn-toolbar</code> class.</p>
 <h4>Working Example</h4>
 <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
   <div class="btn-group mr-2" role="group" aria-label="First group">
@@ -218,7 +218,7 @@ title: Buttons
 &lt;/div&gt;</code></pre>
 
 <h3>Input Groups</h3>
-<p>Easily extend form controls by adding buttons, or button groups on either side of textual inputs, custom selects, and custom file inputs.</p>
+<p>Easily extend form controls by adding buttons, or button groups on either side of textual inputs with the <code>input-group</code> and <code>input-group-btn</code> classes.</p>
 <h4>Working Example</h4>
 <div class="input-group mb-3">
   <div class="input-group-btn">
