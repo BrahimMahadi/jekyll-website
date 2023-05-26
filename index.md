@@ -1,251 +1,385 @@
 ---
-title: Buttons
----
-
+title: Contenu intégré et interactif - Échafaudage
 ---
 ---
 {
-	"title": "Buttons",
-	"language": "en",
-	"description": "Buttons page including working examples to test how various text appears on different backgrounds.",
-	"dateModified": "2023-05-26"
+	"title": "Contenu intégré et interactif - Échafaudage",
+	"language": "fr",
+	"description": "",
+	"dateModified": "2023-07-18"
 }
 ---
 
-<p>This page showcases wet-boew utility features including some integration from Bootstrap 4 such as: <code>bg-primary</code>, <code>text-center</code>, <code>text-white</code> and others.</p>
-<p>Please note that some backported Bootstrap 4 classes have been adjusted to follow Bootstrap 3.4's view breakpoints. For example, small (<code>sm</code>) view's minimum width is 768px in Bootstrap 3.4, as opposed to 576px in Bootstrap 4.</p>
+<h2>L'élément <code>image</code></h2>
+<picture></picture>
+<pre><code>&lt;picture&gt;&lt;/picture&gt;</code></pre>
 
-<h2>On this page:</h2>
+<h2>L'élément <code>source</code> et <code>img</code></h2>
+<picture>
+	<source srcset="img/input-image-sample.jpg">
+	<img src="img/input-image-sample.jpg">
+</picture>
+<pre>
+<code>&lt;picture&gt;
+&lt;source srcset="img/input-image-sample.jpg"&gt;
+&lt;img src="img/input-image-sample.jpg"&gt;
+&lt;/picture&gt;</code>
+</pre>
 
-<ul>
-	<li><a href="#bootstrap">Bootstrap</a></li>
-	<li><a href="#gcweb">GCWeb</a></li>
-</ul>
+<h2>L'élément <code>iframe</code></h2>
+<iframe src="https://www.canada.ca/fr.html" title="Le site officiel du gouvernement du Canada" width="700px" height="500px"></iframe>
+<pre><code>&lt;iframe src="https://www.canada.ca/en.html" title="Le site officiel du gouvernement du Canada" width="700px" height="500px"&gt;&lt;/iframe&gt;</code></pre>
 
-<h2 id="bootstrap">Bootstrap</h2>
+<h2>L'élément <code>embed</code></h2>
+<h3>Une image intégrée</h3>
+<embed type="image/jpg" src="img/input-image-sample.jpg" width="300" height="200">
+<pre><code>&lt;embed type="image/jpg" src="img/input-image-sample.jpg" width="300" height="200"&gt;</code></pre>
 
-<h3>Button Sizes</h3>
-<p>Bootstrap provides 3 different size options: <code>btn-sm</code>, <code>btn</code>, and <code>btn-lg</code>.</p>
-<h4>Working example</h4>
-<button type="button" class="btn btn-sm">Small button</button>
-<button type="button" class="btn">Regular button</button>
-<button type="button" class="btn btn-lg">Large button</button>
+<h3>Une page HTML intégrée</h3>
+<embed type="text/html" src="https://www.canada.ca/fr.html" width="500" height="200">
+<pre><code>&lt;embed type="text/html" src="https://www.canada.ca/en.html" width="500" height="200"&gt;</code></pre>
 
-<h4>Code sample</h4>
-<pre><code>
-	&lt;button type="button" class="btn <strong>btn-sm</strong>"&gt;
-	Small button
-	&lt;/button&gt;
-	&lt;button type="button" class="<strong>btn</strong>"&gt;
-	Regular button
-	&lt;/button&gt;
-	&lt;button type="button" class="btn <strong>btn-lg</strong>"&gt;
-	Large button
-	&lt;/button&gt;</code></pre>
+<h3>Une vidéo intégrée</h3>
+<embed type="video/webm" src="https://wet-boew.github.io/wet-boew-attachments/videos/video1-en.webm" width="400" height="300">
+<pre><code>&lt;embed type="video/webm" src="https://wet-boew.github.io/wet-boew-attachments/videos/video1-en.webm" width="400" height="300"&gt;</code></pre>
 
-<h3>Common Styles</h3>
-<p>Bootstrap provides different styles of buttons.</p>
-<h4>Working example</h4>
-<button type="button" class="btn btn-default">Default</button>
-<button type="button" class="btn btn-primary">Primary</button>
-<button type="button" class="btn btn-success">Success</button>
-<button type="button" class="btn btn-info">Info</button>
-<button type="button" class="btn btn-warning">Warning</button>
-<button type="button" class="btn btn-danger">Danger</button>
+<h2>L'élément <code>object</code></h2>
+<h3>Une image intégrée</h3>
+<object data="img/input-image-sample.jpg" width="300" height="200"></object>
+<pre><code>&lt;object data="img/input-image-sample.jpg" width="300" height="200"&gt;&lt;/object&gt;</code></pre>
 
-<h4>Code sample</h4>
-<pre><code>
-	&lt;button type="button" class="btn <strong>btn-default</strong>"&gt;
-	Default
-	&lt;/button&gt;
-	&lt;button type="button" class="btn <strong>btn-primary</strong>"&gt;
-	Primary
-	&lt;/button&gt;
-	&lt;button type="button" class="btn <strong>btn-success</strong>"&gt;
-	Success
-	&lt;/button&gt;
-	&lt;button type="button" class="btn <strong>btn-info</strong>"&gt;
-	Info
-	&lt;/button&gt;
-	&lt;button type="button" class="btn <strong>btn-warning</strong>"&gt;
-	Warning
-	&lt;/button&gt;
-	&lt;button type="button" class="btn <strong>btn-danger</strong>"&gt;
-	Danger
-	&lt;/button&gt;</code></pre>
+<h3>Une page HTML intégrée</h3>
+<object data="https://www.canada.ca/fr.html" width="500" height="200"></object>
+<pre><code>&lt;object type="text/html" src="https://www.canada.ca/en.html" width="500" height="200"&gt;&lt;/object&gt;</code></pre>
 
-<h3>Links can also be styled with the <code>btn</code> class.</h3>
-<h4>Working example</h4>
-<a href="" class="btn">Link</a>
+<h3>Une vidéo intégrée</h3>
+<object data="https://wet-boew.github.io/wet-boew-attachments/videos/video1-en.webm" width="400" height="300"></object>
+<pre><code>&lt;object data="https://wet-boew.github.io/wet-boew-attachments/videos/video1-en.webm" width="400" height="300"&gt;&lt;/object&gt;</code></pre>
 
-<h4>Code sample</h4>
-<pre><code>&lt;a href="" class="<strong>btn</strong>"&gt;Link&lt;/a&gt;
-</code></pre>
+<h2>L'élément <code>vidéo</code></h2>
+<video controls>
+	<source src="https://wet-boew.github.io/wet-boew-attachments/videos/video1-en.webm" type="video/webm">
+	Votre navigateur ne prend pas en charge la balise vidéo.
+</video>
+<pre>
+<code>&lt;video controls&gt;
+&lt;source src="https://wet-boew.github.io/wet-boew-attachments/videos/video1-en.webm" type="video/webm"&gt;
+Votre navigateur ne prend pas en charge la balise vidéo.
+&lt;/video&gt;</code>
+</pre>
 
-<h3><code>text-white</code> can be combined with bootstraps darker button styles.</h3>
-<h4>Working example</h4>
-<button type="button" class="btn btn-info text-white">Info</button>
+<h2>L'élément <code>audio</code></h2>
+<audio controls>
+	<source src="https://www.archive.org/download/RideOfTheValkyries/ride_of_the_valkyries_2.mp3" type="audio/mp3"/>
+	<source src="https://www.archive.org/download/RideOfTheValkyries/ride_of_the_valkyries_2.ogg" type="audio/ogg"/>
+	Votre navigateur ne prend pas en charge la balise audio.
+</audio>
+<pre>
+<code>&lt;audio controls&gt;
+&lt;source src="https://www.archive.org/download/RideOfTheValkyries/ride_of_the_valkyries_2.mp3" type="audio/mp3"/&gt;
+&lt;source src="https://www.archive.org/download/RideOfTheValkyries/ride_of_the_valkyries_2.ogg" type="audio/ogg"/&gt;
+Votre navigateur ne prend pas en charge la balise audio.
+&lt;/audio&gt;</code>
+</pre>
 
-<h4>Code sample</h4>
-<pre><code>&lt;button type="button" class="btn <strong>text-white</strong>"&gt;Button&lt;/button&gt;
-</code></pre>
+<h2>L'élément <code>track</code></h2>
+<video controls>
+	<source src="https://wet-boew.github.io/wet-boew-attachments/videos/video2-en.webm" type="video/webm">
+	<source src="https://wet-boew.github.io/wet-boew-attachments/videos/video2-en.mp4" type="video/mp4">
+	<track src="demo/video2-captions-en.xml" kind="captions" data-type="application/ttml+xml" srclang="en" label="English">
+	Votre navigateur ne prend pas en charge la balise vidéo.
+</video>
+<pre>
+<code>&lt;video controls&gt;
+&lt;source src="https://wet-boew.github.io/wet-boew-attachments/videos/video2-en.webm" type="video/webm"&gt;
+&lt;source src="https://wet-boew.github.io/wet-boew-attachments/videos/video2-en.mp4" type="video/mp4"&gt;
+&lt;track src="demo/video2-captions-en.xml" kind="captions" data-type="application/ttml+xml" srclang="en" label="English"&gt;
+Votre navigateur ne prend pas en charge la balise vidéo.
+&lt;/video&gt;</code>
+</pre>
 
-<h3>Button groups (Horizontal)</h3>
-<p>Group a series of buttons together on a single line with the <code>btn-group</code> class.</p>
-<h4>Working Example</h4>
-<div class="btn-group">
-	<button type="button" class="btn">Left</button>
-	<button type="button" class="btn">Middle</button>
-	<button type="button" class="btn">Right</button>
+<h2>L'élément <code>map</code> et <code>area</code></h2>
+
+<h2>L'élément <code>details</code> et <code>summary</code></h2>
+
+<details>
+  <summary>Résumé</summary>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sagittis metus ligula, aliquet vulputate ligula molestie nec. Aenean dapibus varius dapibus.</p>
+</details>
+<pre>
+<code>&lt;details&gt;
+&lt;summary&gt;Résumé&lt;/summary&gt;
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sagittis metus ligula, aliquet vulputate ligula molestie nec. Aenean dapibus varius dapibus.&lt;/p&gt;
+&lt;/details&gt;</code>
+</pre>
+
+<h2>L'élément <code>dialogue</code></h2>
+
+<dialog open>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</dialog>
+
+<pre>
+<code>&lt;dialog open&gt;
+Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+&lt;/dialog&gt;</code>
+</pre>
+
+<h2>L'élément <code>table</code></h2>
+
+<table></table>
+<pre>
+<code>&lt;table&gt;&lt;/table&gt;</code>
+</pre>
+
+<h3>2 lignes et 2 colonnes avec les éléments <code>tr</code> et <code>td</code></h3>
+
+<table>
+<tr>
+	<td>Lorem ipsum dolor sit amet</td>
+	<td>Proin pellentesque sodales cursus</td>
+</tr>
+<tr>
+	<td>Nunc dictum felis at dignissim dictum</td>
+	<td>Curabitur ut leo nisi</td>
+</tr>
+</table>
+<pre>
+<code>&lt;table&gt;
+&lt;tr&gt;
+	&lt;td&gt;Lorem ipsum dolor sit amet&lt;/td&gt;
+	&lt;td&gt;Proin pellentesque sodales cursus&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+	&lt;td&gt;Nunc dictum felis at dignissim dictum&lt;/td&gt;
+	&lt;td&gt;Curabitur ut leo nisi&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/table&gt;</code>
+</pre>
+
+<h3>L'élément <code>th</code> définit une cellule d'en-tête</h3>
+
+<table>
+<tr>
+	<th>Lorem ipsum dolor sit amet</th>
+	<th>Proin pellentesque sodales cursus</th>
+</tr>
+<tr>
+	<td>Nunc dictum felis at dignissim dictum</td>
+	<td>Curabitur ut leo nisi</td>
+</tr>
+</table>
+<pre>
+<code>&lt;table&gt;
+&lt;tr&gt;
+	&lt;th&gt;Lorem ipsum dolor sit amet&lt;/th&gt;
+	&lt;th&gt;Proin pellentesque sodales cursus&lt;/th&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+	&lt;td&gt;Nunc dictum felis at dignissim dictum&lt;/td&gt;
+	&lt;td&gt;Curabitur ut leo nisi&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/table&gt;</code>
+</pre>
+
+<h3>Regroupez le contenu avec les éléments <code>thead</code>, <code>tbody</code>, <code>tfoot</code></h3>
+
+<table>
+<thead>
+	<tr>
+		<th>Lorem ipsum dolor sit amet</th>
+		<th>Proin pellentesque sodales cursus</th>
+	</tr>
+</thead>
+<tbody>
+	<tr>
+		<td>Nunc dictum felis at dignissim dictum</td>
+		<td>Curabitur ut leo nisi</td>
+	</tr>
+</tbody>
+<tfoot>
+	<tr>
+		<td>Felis dictum nunc at dictum dignissim</td>
+		<td>Leo ut curabitur nisi</td>
+	</tr>
+</tfoot>
+</table>
+<pre>
+<code>&lt;table&gt;
+&lt;thead&gt;
+	&lt;tr&gt;
+		&lt;th&gt;Lorem ipsum dolor sit amet&lt;/th&gt;
+		&lt;th&gt;Proin pellentesque sodales cursus&lt;/th&gt;
+	&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+	&lt;tr&gt;
+		&lt;td&gt;Nunc dictum felis at dignissim dictum&lt;/td&gt;
+		&lt;td&gt;Curabitur ut leo nisi&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;tfoot&gt;
+	&lt;tr&gt;
+		&lt;td&gt;Felis dictum nunc at dictum dignissim&lt;/td&gt;
+		&lt;td&gt;Leo ut curabitur nisi&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/tfoot&gt;
+&lt;/table&gt;</code>
+</pre>
+
+<h3>Formatez et stylisez des colonnes entières avec les éléments <code>colgroup</code> et <code>col</code></h3>
+
+<table>
+<colgroup>
+	<col span="1" style="background-color:red">
+</colgroup>
+<tr>
+	<td>Lorem ipsum dolor sit amet</td>
+	<td>Proin pellentesque sodales cursus</td>
+</tr>
+<tr>
+	<td>Nunc dictum felis at dignissim dictum</td>
+	<td>Curabitur ut leo nisi</td>
+</tr>
+</table>
+<pre>
+<code>&lt;table&gt;
+&lt;colgroup&gt;
+	&lt;col span="1" style="background-color:red"&gt;
+&lt;tr&gt;
+	&lt;td&gt;Lorem ipsum dolor sit amet&lt;/td&gt;
+	&lt;td&gt;Proin pellentesque sodales cursus&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+	&lt;td&gt;Nunc dictum felis at dignissim dictum&lt;/td&gt;
+	&lt;td&gt;Curabitur ut leo nisi&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/table&gt;</code>
+</pre>
+
+<h3>Dessinez des graphiques avec l'élément <code>canvas</code></h3>
+
+<canvas id="myCanvas">
+Votre navigateur ne prend pas en charge la balise canvas.
+</canvas>
+
+<script>
+	let canvas = document.getElementById("myCanvas");
+	let ctx = canvas.getContext("2d");
+	ctx.fillStyle = "#FF0000";
+	ctx.fillRect(0, 0, 80, 80);
+</script>
+
+<pre>
+<code>&lt;canvas id="myCanvas"&gt;
+Votre navigateur ne prend pas en charge la balise canvas.
+&lt;/canvas&gt;
+
+&lt;script&gt;
+	let canvas = document.getElementById("myCanvas");
+	let ctx = canvas.getContext("2d");
+	ctx.fillStyle = "#FF0000";
+	ctx.fillRect(0, 0, 80, 80);
+&lt;/script&gt;
+</code>
+</pre>
+
+<h3>L'élément <code>template</code></h3>
+
+<p>Cliquez sur le bouton ci-dessous pour afficher le contenu masqué de l'élément de modèle.</p>
+
+<button onclick="showContent()">Afficher le contenu masqué</button>
+
+<div id="content"></div>
+
+<template>
+  <h2>Image cachée</h2>
+  <img src="img/input-image-sample.jpg" width="300" height="200">
+</template>
+
+<script>
+	function showContent() {
+	let temp = document.getElementsByTagName("template")[0];
+	let clone = temp.content.cloneNode(true);
+	let content = document.getElementById("content");
+	content.appendChild(clone);
+	}
+</script>
+
+<pre>
+<code>&lt;button onclick="showContent()"&gt;
+Afficher le contenu masqué
+&lt;/button&gt;
+
+&lt;template&gt;
+	&lt;h2&gt;Image cachée&lt;/h2&gt;
+	&lt;img src="img/input-image-sample.jpg" width="300" height="200"&gt;
+&lt;/template&gt;
+
+&lt;script&gt;
+	function showContent() {
+	let temp = document.getElementsByTagName("template")[0];
+	let clone = temp.content.cloneNode(true);
+	let content = document.getElementById("content");
+	content.appendChild(clone);
+	}
+&lt;/script&gt;
+</code>
+</pre>
+
+<h3>L'élément <code>slot</code></h3>
+
+<template id="slotTemplate">
+    <h1><slot name="heading"></slot></h1>
+    <dl>
+        <dt><slot name="term-1"></slot></dt>
+        <dd><slot name="description-1"></slot></dd>
+        <dt><slot name="term-2"></slot></dt>
+		<dd><slot name="description-2"></slot></dd>
+    </dl>
+</template>
+
+<div class="slotDiv">
+    <span slot="heading">Lorem ipsum</span>
+    <span slot="term-1">Dolor sit amet</span>
+    <span slot="description-1">Aliquam vel consectetur erat</span>
+    <span slot="term-2">Morbi vitae odio orci</span>
+	<span slot="description-2">Cras neque ligula</span>
 </div>
 
-<h4>Code sample</h4>
-<pre><code>&lt;div class="<strong>btn-group</strong>"&gt;
-	&lt;button type="button" class="btn"&gt;
-	Left
-	&lt;/button&gt;
-	&lt;button type="button" class="btn"&gt;
-	Middle
-	&lt;/button&gt;
-	&lt;button type="button" class="btn"&gt;
-	Right
-	&lt;/button&gt;
-&lt;/div&gt;</code></pre>
+<script>
+  var dlTemplate = document.querySelector('#slotTemplate').content;
+  var div = document.querySelector('.slotDiv');
+ 
+    div.attachShadow({  mode: 'open' }).appendChild(
+        dlTemplate.cloneNode(true));
+</script>
 
-<h3>Button groups (Vertical)</h3>
-<p>Make a set of buttons appear vertically stacked rather than horizontally with the <code>btn-group-vertical</code> class.</p>
-<h4>Working Example</h4>
-<div class="btn-group-vertical">
-	<button type="button" class="btn">Top</button>
-	<button type="button" class="btn">Middle</button>
-	<button type="button" class="btn">Bottom</button>
-</div>
+<pre>
+<code>&lt;template&gt;
+	&lt;h1&gt;&lt;slot name="heading"&gt;&lt;/slot&gt;&lt;/h1&gt;
+	&lt;dl&gt;
+		&lt;dt&gt;&lt;slot name="term-1"&gt;&lt;/slot&gt;&lt;/dt&gt;
+		&lt;dd&gt;&lt;slot name="description-1"&gt;&lt;/slot&gt;&lt;/dd&gt;
+		&lt;dt&gt;&lt;slot name="term-2"&gt;&lt;/slot&gt;&lt;/dt&gt;
+		&lt;dd&gt;&lt;slot name="description-2"&gt;&lt;/slot&gt;&lt;/dd&gt;
+	&lt;/dl&gt;
+&lt;/template&gt;
 
-<h4>Code sample</h4>
-<pre><code>&lt;div class="<strong>btn-group-vertical</strong>"&gt;
-	&lt;button type="button" class="btn"&gt;
-	Top
-	&lt;/button&gt;
-	&lt;button type="button" class="btn"&gt;
-	Middle
-	&lt;/button&gt;
-	&lt;button type="button" class="btn"&gt;
-	Bottom
-	&lt;/button&gt;
-&lt;/div&gt;</code></pre>
-
-<h3>Button toolbar</h3>
-<p>Combine sets of button groups into button toolbars for more complex components with the <code>btn-toolbar</code> class.</p>
-<h4>Working Example</h4>
-<div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
-  <div class="btn-group mr-2" role="group" aria-label="First group">
-    <button type="button" class="btn">1</button>
-    <button type="button" class="btn">2</button>
-    <button type="button" class="btn">3</button>
-    <button type="button" class="btn">4</button>
-  </div>
-  <div class="btn-group mr-2" role="group" aria-label="Second group">
-    <button type="button" class="btn">5</button>
-    <button type="button" class="btn">6</button>
-    <button type="button" class="btn">7</button>
-  </div>
-  <div class="btn-group" role="group" aria-label="Third group">
-    <button type="button" class="btn">8</button>
-  </div>
-</div>
-
-<h4>Code sample</h4>
-<pre><code>&lt;div class="<strong>btn-toolbar</strong>" role="toolbar" aria-label="Toolbar with button groups"&gt;
-	&lt;div class="btn-group" role="group" aria-label="First group"&gt;
-		&lt;button type="button" class="btn"&gt;
-		1
-		&lt;/button&gt;
-		&lt;button type="button" class="btn"&gt;
-		2
-		&lt;/button&gt;
-		&lt;button type="button" class="btn"&gt;
-		3
-		&lt;/button&gt;
-		&lt;button type="button" class="btn"&gt;
-		4
-		&lt;/button&gt;
-	&lt;/div&gt;
-
-	&lt;div class="btn-group" role="group" aria-label="Second group"&gt;
-		&lt;button type="button" class="btn"&gt;
-		5
-		&lt;/button&gt;
-		&lt;button type="button" class="btn"&gt;
-		6
-		&lt;/button&gt;
-		&lt;button type="button" class="btn"&gt;
-		7
-		&lt;/button&gt;
-	&lt;/div&gt;
-
-	&lt;div class="btn-group" role="group" aria-label="Third group"&gt;
-		&lt;button type="button" class="btn"&gt;
-		8
-		&lt;/button&gt;
-	&lt;/div&gt;
-&lt;/div&gt;</code></pre>
-
-<h3>Input Groups</h3>
-<p>Easily extend form controls by adding buttons, or button groups on either side of textual inputs with the <code>input-group</code> and <code>input-group-btn</code> classes.</p>
-<h4>Working Example</h4>
-<div class="input-group mb-3">
-  <div class="input-group-btn">
-    <button class="btn" type="button">Button</button>
-  </div>
-  <input type="text" class="form-control">
-</div>
-
-<div class="input-group mb-3">
-  <input type="text" class="form-control">
-   <div class="input-group-btn">
-    <button class="btn" type="button">Button</button>
-  </div>
-</div>
-
-<h4>Code Sample</h4>
-<pre><code>&lt;div class="<strong>input-group</strong> mb-3"&gt;
-	&lt;div class="<strong>input-group-btn</strong>"&gt;
-		&lt;button class="btn" type="button"&gt;Button&lt;/button&gt;
-	&lt;/div&gt;
-	&lt;input type="text" class="form-control"&gt;
+&lt;div class="slotDiv"&gt;
+	&lt;span slot="heading"&gt;Lorem ipsum&lt;/span&gt;
+	&lt;span slot="term-1"&gt;Dolor sit amet&lt;/span&gt;
+	&lt;span slot="description-1"&gt;Aliquam vel consectetur erat&lt;/span&gt;
+	&lt;span slot="term-2"&gt;Morbi vitae odio orci&lt;/span&gt;
+	&lt;span slot="description-2"&gt;Cras neque ligula&lt;/span&gt;
 &lt;/div&gt;
 
-&lt;div class="<strong>input-group</strong> mb-3"&gt;
-	&lt;input type="text" class="form-control"&gt;
-	&lt;div class="<strong>input-group-btn</strong>"&gt;
-		&lt;button class="btn" type="button"&gt;Button&lt;/button&gt;
-	&lt;/div&gt;
-&lt;/div&gt;</code></pre>
-
-<h3>Checkbox and Radio buttons</h3>
-<p>Bootstrap’s <code>.button</code> styles can be applied to other elements, such as <code>label</code>s, to provide checkbox or radio style button toggling. Add <code>data-toggle="buttons"</code> to a <code>.btn-group</code> containing those modified buttons to enable their toggling behavior via JavaScript and add <code>.btn-group-toggle</code> to style the <code>input</code>s within your buttons.</p>
-<h4>Working example</h4>
-<div class="btn-group-toggle" data-toggle="buttons">
-  <label class="btn btn-secondary active">
-    <input type="checkbox" checked autocomplete="off"> Checked
-  </label>
-</div>
-
-<h4>Code sample</h4>
-<pre><code>&lt;div class="btn-group-toggle" data-toggle="buttons"&gt;
-  &lt;label class="btn btn-secondary active"&gt;
-    &lt;input type="checkbox" checked autocomplete="off"&gt; Checked
-  &lt;/label&gt;
-&lt;/div&gt;
-</code></pre>
-
-<h2 id="gcweb">GCWeb</h2>
-
-<h3><code>btn-primary</code> + <code>btn-call-to-action</code></h3>
-<p>Create a button for the GCWeb theme.</p>
-<h4>Working example</h4>
-<button type="button" class="btn btn-primary btn-call-to-action">Call to Action</button>
-
-<h4>Code sample</h4>
-<pre><code>&lt;button type="button" class="btn btn-primary btn-call-to-action"&gt;Call to Action&lt;/button&gt;
-</code></pre>
+&lt;script&gt;
+	var dlTemplate = document.querySelector('template').content;
+	var divs = document.querySelectorAll('.slotDiv');
+ 
+	divs.forEach(function(div){
+	div.attachShadow({  mode: 'open' }).appendChild(
+    dlTemplate.cloneNode(true))
+  });
+&lt;/script&gt;
+</code>
+</pre>
