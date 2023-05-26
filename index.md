@@ -8,7 +8,7 @@ title: Buttons
 	"title": "Buttons",
 	"language": "en",
 	"description": "Buttons page including working examples to test how various text appears on different backgrounds.",
-	"dateModified": "2023-05-23"
+	"dateModified": "2023-05-26"
 }
 ---
 
@@ -18,44 +18,9 @@ title: Buttons
 <h2>On this page:</h2>
 
 <ul>
-	<li><a href="#wetoverride">WET Override</a></li>
 	<li><a href="#bootstrap">Bootstrap</a></li>
 	<li><a href="#gcweb">GCWeb</a></li>
 </ul>
-
-<h2 id="wetoverride">WET Override</h2>
-
-<h3><code>text-white</code></h3>
-<p>Set the text color to white.</p>
-<h4>Working example</h4>
-<h5>Paragraph</h5>
-<p class="bg-dark text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-<h5>Link</h5>
-<p class="bg-dark"><a class="text-white" href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a></p>
-<h5>Button</h5>
-<button type="button" class="btn bg-dark text-white">button</button>
-<h4>Code sample</h4>
-<pre><code>
-&lt;h5&gt;Paragraph&lt;/h5&gt;
-&lt;p class="bg-dark <strong>text-white</strong>"&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit.&lt;/p&gt;
-&lt;h5&gt;Link&lt;/h5&gt;
-&lt;p class="bg-dark"&gt;&lt;a class="<strong>text-white</strong>" href="#"&gt; Lorem ipsum dolor sit amet, consectetur adipiscing elit.&lt;/a&gt;&lt;/p&gt;
-&lt;h5&gt;Button&lt;/h5&gt;
-&lt;button type="button" class="btn bg-dark <strong>text-white</strong>"&gt; Lorem ipsum dolor sit amet, consectetur adipiscing elit.&lt;/button&gt;</code></pre>
-
-<h3><code>text-sm-left</code></h3>
-<p>Align text to the left in small view and over.</p>
-<h4>Working example</h4>
-<p class="text-right text-sm-left">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-<h4>Code sample</h4>
-<pre><code>&lt;p class="text-right <strong>text-sm-left</strong>"&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit.&lt;/p&gt;</code></pre>
-
-<h3><code>text-sm-right</code></h3>
-<p>Align text to the right in small view and over.</p>
-<h4>Working example</h4>
-<p class="text-sm-right">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-<h4>Code sample</h4>
-<pre><code>&lt;p class="<strong>text-sm-right</strong>"&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit.&lt;/p&gt;</code></pre>
 
 <h2 id="bootstrap">Bootstrap</h2>
 
@@ -284,105 +249,3 @@ title: Buttons
 <h4>Code sample</h4>
 <pre><code>&lt;button type="button" class="btn btn-primary btn-call-to-action"&gt;Call to Action&lt;/button&gt;
 </code></pre>
-
-<h3><code>bg-gctheme</code></h3>
-<p>Set background to the gctheme.</p>
-<h4>Working example</h4>
-<div class="bg-cover well" data-bgimg="../../demos/tabs/img/investinourfuture.jpg">
-	<div class="bg-gctheme text-white well mrgn-tp-md mrgn-bttm-md">
-		<h5 class="mrgn-tp-md">Heading</h5>
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ante nulla, condimentum at mollis et, scelerisque quis dolor. Suspendisse viverra in ante id consequat. Interdum et malesuada fames ac ante ipsum primis in faucibus. Fusce sodales ipsum vitae faucibus iaculis. Nulla in blandit dolor. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aenean non interdum sapien. Nunc non volutpat dui, in malesuada justo. Etiam feugiat accumsan pulvinar. Quisque blandit est in placerat finibus. Sed et ullamcorper velit. Nullam euismod iaculis ligula sit amet consequat. Aenean luctus quis nisi nec feugiat.</p>
-	</div>
-</div>
-<h4>Code sample</h4>
-<pre><code>&lt;div class="bg-cover well" data-bgimg="../../demos/tabs/img/investinourfuture.jpg"&gt;
-	&lt;div class="<strong>bg-gctheme</strong> text-white well mrgn-tp-md mrgn-bttm-md"&gt;
-		&lt;h5 class="mrgn-tp-md"&gt;Heading&lt;/h5&gt;
-		&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ante nulla, condimentum at mollis et, scelerisque quis dolor. Suspendisse viverra in ante id consequat. Interdum et malesuada fames ac ante ipsum primis in faucibus. Fusce sodales ipsum vitae faucibus iaculis. Nulla in blandit dolor. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aenean non interdum sapien. Nunc non volutpat dui, in malesuada justo. Etiam feugiat accumsan pulvinar. Quisque blandit est in placerat finibus. Sed et ullamcorper velit. Nullam euismod iaculis ligula sit amet consequat. Aenean luctus quis nisi nec feugiat.&lt;/p&gt;
-	&lt;/div&gt;
-&lt;/div&gt;</code></pre>
-
-<h3><code>bg-cover</code></h3>
-<p>Set background image to fully cover the box size.</p>
-<h4>Working example</h4>
-<div class="bg-cover well" data-bgimg="../../demos/tabs/img/investinourfuture.jpg">
-	<div class="well mrgn-tp-md mrgn-bttm-md">
-		<h5 class="mrgn-tp-md">Heading</h5>
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ante nulla, condimentum at mollis et, scelerisque quis dolor. Suspendisse viverra in ante id consequat. Interdum et malesuada fames ac ante ipsum primis in faucibus. Fusce sodales ipsum vitae faucibus iaculis. Nulla in blandit dolor. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aenean non interdum sapien. Nunc non volutpat dui, in malesuada justo. Etiam feugiat accumsan pulvinar. Quisque blandit est in placerat finibus. Sed et ullamcorper velit. Nullam euismod iaculis ligula sit amet consequat. Aenean luctus quis nisi nec feugiat.</p>
-	</div>
-</div>
-<h4>Code sample</h4>
-<pre><code>&lt;div class="<strong>bg-cover</strong> well" data-bgimg="../../demos/tabs/img/investinourfuture.jpg"&gt;
-	&lt;div class="well mrgn-tp-md mrgn-bttm-md"&gt;
-		&lt;h5 class="mrgn-tp-md"&gt;Heading&lt;/h5&gt;
-		&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ante nulla, condimentum at mollis et, scelerisque quis dolor. Suspendisse viverra in ante id consequat. Interdum et malesuada fames ac ante ipsum primis in faucibus. Fusce sodales ipsum vitae faucibus iaculis. Nulla in blandit dolor. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aenean non interdum sapien. Nunc non volutpat dui, in malesuada justo. Etiam feugiat accumsan pulvinar. Quisque blandit est in placerat finibus. Sed et ullamcorper velit. Nullam euismod iaculis ligula sit amet consequat. Aenean luctus quis nisi nec feugiat.&lt;/p&gt;
-	&lt;/div&gt;
-&lt;/div&gt;</code></pre>
-
-<h3><code>bg-center</code></h3>
-<p>Set background image in the center of the container.</p>
-<h4>Working example</h4>
-<div class="bg-center well" data-bgimg="../../demos/tabs/img/investinourfuture.jpg">
-	<div class="well mrgn-tp-md mrgn-bttm-md">
-		<h5 class="mrgn-tp-md">Heading</h5>
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ante nulla, condimentum at mollis et, scelerisque quis dolor. Suspendisse viverra in ante id consequat. Interdum et malesuada fames ac ante ipsum primis in faucibus. Fusce sodales ipsum vitae faucibus iaculis. Nulla in blandit dolor. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aenean non interdum sapien. Nunc non volutpat dui, in malesuada justo. Etiam feugiat accumsan pulvinar. Quisque blandit est in placerat finibus. Sed et ullamcorper velit. Nullam euismod iaculis ligula sit amet consequat. Aenean luctus quis nisi nec feugiat.</p>
-	</div>
-</div>
-<h4>Code sample</h4>
-<pre><code>&lt;div class="<strong>bg-center</strong> well" data-bgimg="../../demos/tabs/img/investinourfuture.jpg"&gt;
-	&lt;div class="well mrgn-tp-md mrgn-bttm-md"&gt;
-		&lt;h5 class="mrgn-tp-md"&gt;Heading&lt;/h5&gt;
-		&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ante nulla, condimentum at mollis et, scelerisque quis dolor. Suspendisse viverra in ante id consequat. Interdum et malesuada fames ac ante ipsum primis in faucibus. Fusce sodales ipsum vitae faucibus iaculis. Nulla in blandit dolor. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aenean non interdum sapien. Nunc non volutpat dui, in malesuada justo. Etiam feugiat accumsan pulvinar. Quisque blandit est in placerat finibus. Sed et ullamcorper velit. Nullam euismod iaculis ligula sit amet consequat. Aenean luctus quis nisi nec feugiat.&lt;/p&gt;
-	&lt;/div&gt;
-&lt;/div&gt;</code></pre>
-
-<h3><code>bg-norepeat</code></h3>
-<p>Prevent background image to be repeated in the container.</p>
-<h4>Working example</h4>
-<div class="bg-norepeat well" data-bgimg="../../demos/tabs/img/investinourfuture.jpg">
-	<div class="well mrgn-tp-md mrgn-bttm-md">
-		<h5 class="mrgn-tp-md">Heading</h5>
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ante nulla, condimentum at mollis et, scelerisque quis dolor. Suspendisse viverra in ante id consequat. Interdum et malesuada fames ac ante ipsum primis in faucibus. Fusce sodales ipsum vitae faucibus iaculis. Nulla in blandit dolor. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aenean non interdum sapien. Nunc non volutpat dui, in malesuada justo. Etiam feugiat accumsan pulvinar. Quisque blandit est in placerat finibus. Sed et ullamcorper velit. Nullam euismod iaculis ligula sit amet consequat. Aenean luctus quis nisi nec feugiat.</p>
-	</div>
-</div>
-<h4>Code sample</h4>
-<pre><code>&lt;div class="<strong>bg-norepeat</strong> well" data-bgimg="../../demos/tabs/img/investinourfuture.jpg"&gt;
-	&lt;div class="well mrgn-tp-md mrgn-bttm-md"&gt;
-		&lt;h5 class="mrgn-tp-md"&gt;Heading&lt;/h5&gt;
-		&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ante nulla, condimentum at mollis et, scelerisque quis dolor. Suspendisse viverra in ante id consequat. Interdum et malesuada fames ac ante ipsum primis in faucibus. Fusce sodales ipsum vitae faucibus iaculis. Nulla in blandit dolor. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aenean non interdum sapien. Nunc non volutpat dui, in malesuada justo. Etiam feugiat accumsan pulvinar. Quisque blandit est in placerat finibus. Sed et ullamcorper velit. Nullam euismod iaculis ligula sit amet consequat. Aenean luctus quis nisi nec feugiat.&lt;/p&gt;
-	&lt;/div&gt;
-&lt;/div&gt;</code></pre>
-
-<h3><code>bg-darker</code></h3>
-<p>Set a black background to an element.</p>
-<h4>Working example</h4>
-<div class="bg-cover well" data-bgimg="../../demos/tabs/img/investinourfuture.jpg">
-	<div class="well mrgn-tp-md mrgn-bttm-md bg-darker text-white">
-		<h5 class="mrgn-tp-md">Heading</h5>
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ante nulla, condimentum at mollis et, scelerisque quis dolor. Suspendisse viverra in ante id consequat. Interdum et malesuada fames ac ante ipsum primis in faucibus. Fusce sodales ipsum vitae faucibus iaculis. Nulla in blandit dolor. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aenean non interdum sapien. Nunc non volutpat dui, in malesuada justo. Etiam feugiat accumsan pulvinar. Quisque blandit est in placerat finibus. Sed et ullamcorper velit. Nullam euismod iaculis ligula sit amet consequat. Aenean luctus quis nisi nec feugiat.</p>
-	</div>
-</div>
-<h4>Code sample</h4>
-<pre><code>&lt;div class="bg-cover well" data-bgimg="../../demos/tabs/img/investinourfuture.jpg"&gt;
-	&lt;div class="well mrgn-tp-md mrgn-bttm-md <strong>bg-darker</strong> text-white"&gt;
-		&lt;h5 class="mrgn-tp-md"&gt;Heading&lt;/h5&gt;
-		&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ante nulla, condimentum at mollis et, scelerisque quis dolor. Suspendisse viverra in ante id consequat. Interdum et malesuada fames ac ante ipsum primis in faucibus. Fusce sodales ipsum vitae faucibus iaculis. Nulla in blandit dolor. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aenean non interdum sapien. Nunc non volutpat dui, in malesuada justo. Etiam feugiat accumsan pulvinar. Quisque blandit est in placerat finibus. Sed et ullamcorper velit. Nullam euismod iaculis ligula sit amet consequat. Aenean luctus quis nisi nec feugiat.&lt;/p&gt;
-	&lt;/div&gt;
-&lt;/div&gt;</code></pre>
-
-<h3><code>bg-dark</code></h3>
-<p>Set a dark background to an element.</p>
-<h4>Working example</h4>
-<div class="bg-cover well" data-bgimg="../../demos/tabs/img/investinourfuture.jpg">
-	<div class="well mrgn-tp-md mrgn-bttm-md bg-dark text-white">
-		<h5 class="mrgn-tp-md">Heading</h5>
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ante nulla, condimentum at mollis et, scelerisque quis dolor. Suspendisse viverra in ante id consequat. Interdum et malesuada fames ac ante ipsum primis in faucibus. Fusce sodales ipsum vitae faucibus iaculis. Nulla in blandit dolor. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aenean non interdum sapien. Nunc non volutpat dui, in malesuada justo. Etiam feugiat accumsan pulvinar. Quisque blandit est in placerat finibus. Sed et ullamcorper velit. Nullam euismod iaculis ligula sit amet consequat. Aenean luctus quis nisi nec feugiat.</p>
-	</div>
-</div>
-<h4>Code sample</h4>
-<pre><code>&lt;div class="bg-cover well" data-bgimg="../../demos/tabs/img/investinourfuture.jpg"&gt;
-	&lt;div class="well mrgn-tp-md mrgn-bttm-md <strong>bg-dark</strong> text-white"&gt;
-		&lt;h5 class="mrgn-tp-md"&gt;Heading&lt;/h5&gt;
-		&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ante nulla, condimentum at mollis et, scelerisque quis dolor. Suspendisse viverra in ante id consequat. Interdum et malesuada fames ac ante ipsum primis in faucibus. Fusce sodales ipsum vitae faucibus iaculis. Nulla in blandit dolor. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aenean non interdum sapien. Nunc non volutpat dui, in malesuada justo. Etiam feugiat accumsan pulvinar. Quisque blandit est in placerat finibus. Sed et ullamcorper velit. Nullam euismod iaculis ligula sit amet consequat. Aenean luctus quis nisi nec feugiat.&lt;/p&gt;
-	&lt;/div&gt;
-&lt;/div&gt;</code></pre>
