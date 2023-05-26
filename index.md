@@ -114,7 +114,7 @@ title: Buttons
 <a href="" class="btn">Link</a>
 
 <h4>Code sample</h4>
-<pre><code>&lt;a href="" class="<strong>btn<strong>"&gt;Link&lt;/a&gt;
+<pre><code>&lt;a href="" class="<strong>btn</strong>"&gt;Link&lt;/a&gt;
 </code></pre>
 
 <h3>Button groups (Horizontal)</h3>
