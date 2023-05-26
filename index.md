@@ -257,114 +257,16 @@ title: Buttons
 	&lt;/div&gt;
 &lt;/div&gt;</code></pre>
 
-
-<h3>Text Colors</h3>
-<p>Set text to one of the Bootstrap colors.</p>
-<h4>Working example</h4>
-<div class="well">
-	<div class="well mrgn-tp-md mrgn-bttm-md">
-		<h5 class="mrgn-tp-md">Muted</h5>
-		<p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-	</div>
-	<div class="well mrgn-tp-md mrgn-bttm-md">
-		<h5 class="mrgn-tp-md">Primary</h5>
-		<p class="text-primary">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-	</div>
-	<div class="well mrgn-tp-md mrgn-bttm-md">
-		<h5 class="mrgn-tp-md">Success</h5>
-		<p class="text-success">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-	</div>
-	<div class="well mrgn-tp-md mrgn-bttm-md">
-		<h5 class="mrgn-tp-md">Info</h5>
-		<p class="text-info">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-	</div>
-	<div class="well mrgn-tp-md mrgn-bttm-md">
-		<h5 class="mrgn-tp-md">Warning</h5>
-		<p class="text-warning">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-	</div>
-	<div class="well mrgn-tp-md mrgn-bttm-md">
-		<h5 class="mrgn-tp-md">Danger</h5>
-		<p class="text-danger">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-	</div>
-</div>
-<h4>Code sample</h4>
-<pre><code>&lt;div class="well"&gt;
-	&lt;div class="well mrgn-tp-md mrgn-bttm-md"&gt;
-		&lt;h5 class="mrgn-tp-md"&gt;Muted&lt;/h5&gt;
-		&lt;p class="<strong>text-muted</strong>"&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit.&lt;/p&gt;
-	&lt;/div&gt;
-	&lt;div class="well mrgn-tp-md mrgn-bttm-md"&gt;
-		&lt;h5 class="mrgn-tp-md"&gt;Primary&lt;/h5&gt;
-		&lt;p class="<strong>text-primary</strong>"&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit.&lt;/p&gt;
-	&lt;/div&gt;
-	&lt;div class="well mrgn-tp-md mrgn-bttm-md"&gt;
-		&lt;h5 class="mrgn-tp-md"&gt;Success&lt;/h5&gt;
-		&lt;p class="<strong>text-success</strong>"&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit.&lt;/p&gt;
-	&lt;/div&gt;
-	&lt;div class="well mrgn-tp-md mrgn-bttm-md"&gt;
-		&lt;h5 class="mrgn-tp-md"&gt;Info&lt;/h5&gt;
-		&lt;p class="<strong>text-info</strong>"&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit.&lt;/p&gt;
-	&lt;/div&gt;
-	&lt;div class="well mrgn-tp-md mrgn-bttm-md"&gt;
-		&lt;h5 class="mrgn-tp-md"&gt;Warning&lt;/h5&gt;
-		&lt;p class="<strong>text-warning</strong>"&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit.&lt;/p&gt;
-	&lt;/div&gt;
-	&lt;div class="well mrgn-tp-md mrgn-bttm-md"&gt;
-		&lt;h5 class="mrgn-tp-md"&gt;Danger&lt;/h5&gt;
-		&lt;p class="<strong>text-danger</strong>"&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit.&lt;/p&gt;
-	&lt;/div&gt;
-&lt;/div&gt;</code></pre>
-
-<h3>Text Align</h3>
-<p>Align text on the page.</p>
-<h4>Working example</h4>
-<div class="well">
-	<div class="well mrgn-tp-md mrgn-bttm-md text-left">
-		<h5 class="mrgn-tp-md">Aligned-left</h5>
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-	</div>
-	<div class="well mrgn-tp-md mrgn-bttm-md text-right">
-		<h5 class="mrgn-tp-md">Aligned-right</h5>
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-	</div>
-	<div class="well mrgn-tp-md mrgn-bttm-md text-center">
-		<h5 class="mrgn-tp-md">Aligned-center</h5>
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-	</div>
-	<div class="well mrgn-tp-md mrgn-bttm-md text-justify">
-		<h5 class="mrgn-tp-md">Aligned-justify</h5>
-		<p>Ambitioni dedisse scripsisse iudicaretur. Cras mattis iudicium purus sit amet fermentum. Donec sed odio operae, eu vulputate felis rhoncus. Praeterea iter est quasdam res quas ex communi. At nos hinc posthac, sitientis piros Afros. Petierunt uti sibi concilium totius Galliae in diem certam indicere. Cras mattis iudicium purus sit amet fermentum.</p>
-	</div>
-	<div class="well mrgn-tp-md mrgn-bttm-md text-nowrap" style="width: 8rem; border: 2px solid black">
-		<h5 class="mrgn-tp-md">No wrap</h5>
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-	</div>
-</div>
-<h4>Code sample</h4>
-<pre><code>&lt;div class="well"&gt;
-	&lt;div class="well mrgn-tp-md mrgn-bttm-md <strong>text-left</strong>"&gt;
-		&lt;h5 class="mrgn-tp-md"&gt;Aligned-left&lt;/h5&gt;
-		&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit.&lt;/p&gt;
-	&lt;/div&gt;
-	&lt;div class="well mrgn-tp-md mrgn-bttm-md <strong>text-right</strong>"&gt;
-		&lt;h5 class="mrgn-tp-md"&gt;Aligned-right&lt;/h5&gt;
-		&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit.&lt;/p&gt;
-	&lt;/div&gt;
-	&lt;div class="well mrgn-tp-md mrgn-bttm-md <strong>text-center</strong>"&gt;
-		&lt;h5 class="mrgn-tp-md"&gt;Aligned-center&lt;/h5&gt;
-		&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit.&lt;/p&gt;
-	&lt;/div&gt;
-	&lt;div class="well mrgn-tp-md mrgn-bttm-md <strong>text-justify</strong>"&gt;
-		&lt;h5 class="mrgn-tp-md"&gt;Aligned-justify&lt;/h5&gt;
-		&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit.&lt;/p&gt;
-	&lt;/div&gt;
-	&lt;div class="well mrgn-tp-md mrgn-bttm-md <strong>text-nowrap</strong>" style="width: 8rem; border: 2px solid black"&gt;
-		&lt;h5 class="mrgn-tp-md"&gt;No wrap&lt;/h5&gt;
-		&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit.&lt;/p&gt;
-	&lt;/div&gt;
-&lt;/div&gt;</code></pre>
-
 <h2 id="gcweb">GCWeb</h2>
+
+<h3><code>btn-primary</code> + <code>btn-call-to-action</code></h3>
+<p>Create a button for the GCWeb theme.</p>
+<h4>Working example</h4>
+<button type="button" class="btn btn-primary btn-call-to-action">Call to Action</button>
+
+<h4>Code sample</h4>
+<pre><code>&lt;button type="button" class="btn btn-primary btn-call-to-action"&gt;Call to Action&lt;/button&gt;
+</code></pre>
 
 <h3><code>bg-gctheme</code></h3>
 <p>Set background to the gctheme.</p>
