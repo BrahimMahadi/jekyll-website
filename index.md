@@ -60,11 +60,23 @@ title: Buttons
 <h2 id="bootstrap">Bootstrap</h2>
 
 <h3>Button Sizes</h3>
-<p>Bootstrap provides 3 different size options: Small, Regular, and Large</p>
+<p>Bootstrap provides 3 different size options: Small, Regular, and Large.</p>
 <h4>Working example</h4>
 <button type="button" class="btn btn-sm">Small button</button>
 <button type="button" class="btn">Regular button</button>
 <button type="button" class="btn btn-lg">Large button</button>
+
+<h4>Code sample</h4>
+<pre><code>
+	&lt;button type="button" class="btn <strong>btn-sm</strong>"&gt;
+	Small button
+	&lt;/button&gt;
+	&lt;button type="button" class="btn"&gt;
+	Regular button
+	&lt;/button&gt;
+	&lt;button type="button" class="btn <strong>btn-lg</strong>"&gt;
+	Large button
+	&lt;/button&gt;</code></pre>
 
 <h3>Common Styles</h3>
 <p>Bootstrap provides different styles of buttons.</p>
@@ -216,7 +228,7 @@ title: Buttons
 
 <h4>Code Sample</h4>
 <pre><code>&lt;div class="<strong>input-group</strong> mb-3"&gt;
-	&lt;div class="input-group-btn"&gt;
+	&lt;div class="<strong>input-group-btn</strong>"&gt;
 		&lt;button class="btn" type="button"&gt;Button&lt;/button&gt;
 	&lt;/div&gt;
 	&lt;input type="text" class="form-control"&gt;
@@ -224,7 +236,7 @@ title: Buttons
 
 &lt;div class="<strong>input-group</strong> mb-3"&gt;
 	&lt;input type="text" class="form-control"&gt;
-	&lt;div class="input-group-btn"&gt;
+	&lt;div class="<strong>input-group-btn</strong>"&gt;
 		&lt;button class="btn" type="button"&gt;Button&lt;/button&gt;
 	&lt;/div&gt;
 &lt;/div&gt;</code></pre>
