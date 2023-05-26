@@ -109,12 +109,20 @@ title: Buttons
 	Danger
 	&lt;/button&gt;</code></pre>
 
-<p>Links can also be styled with the <code>btn</code> class.</p>
+<h3>Links can also be styled with the <code>btn</code> class.</h3>
 <h4>Working example</h4>
 <a href="" class="btn">Link</a>
 
 <h4>Code sample</h4>
 <pre><code>&lt;a href="" class="<strong>btn</strong>"&gt;Link&lt;/a&gt;
+</code></pre>
+
+<h3><code>text-white</code> can be combined with bootstraps darker button styles.</h3>
+<h4>Working example</h4>
+<button type="button" class="btn btn-info text-white">Info</button>
+
+<h4>Code sample</h4>
+<pre><code>&lt;button type="button" class="btn <strong>text-white</strong>"&gt;Button&lt;/button&gt;
 </code></pre>
 
 <h3>Button groups (Horizontal)</h3>
