@@ -113,6 +113,10 @@ title: Buttons
 <h4>Working example</h4>
 <a href="" class="btn">Link</a>
 
+<h4>Code sample</h4>
+<pre><code>&lt;a href="" class="<strong>btn<strong>"&gt;Link&lt;/a&gt;
+</code></pre>
+
 <h3>Button groups (Horizontal)</h3>
 <p>Group a series of buttons together on a single line with the button group</p>
 <h4>Working Example</h4>
