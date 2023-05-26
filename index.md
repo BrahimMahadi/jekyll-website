@@ -257,6 +257,23 @@ title: Buttons
 	&lt;/div&gt;
 &lt;/div&gt;</code></pre>
 
+<h3>Checkbox and Radio buttons</h3>
+<p>Bootstrap’s <code>.button</code> styles can be applied to other elements, such as <code>label</code>s, to provide checkbox or radio style button toggling. Add <code>data-toggle="buttons"</code> to a <code>.btn-group</code> containing those modified buttons to enable their toggling behavior via JavaScript and add <code>.btn-group-toggle</code> to style the <code>input</code>s within your buttons.</p>
+<h4>Working example</h4>
+<div class="btn-group-toggle" data-toggle="buttons">
+  <label class="btn btn-secondary active">
+    <input type="checkbox" checked autocomplete="off"> Checked
+  </label>
+</div>
+
+<h4>Code sample</h4>
+<pre><code>&lt;div class="btn-group-toggle" data-toggle="buttons"&gt;
+  &lt;label class="btn btn-secondary active"&gt;
+    &lt;input type="checkbox" checked autocomplete="off"&gt; Checked
+  &lt;/label&gt;
+&lt;/div&gt;
+</code></pre>
+
 <h2 id="gcweb">GCWeb</h2>
 
 <h3><code>btn-primary</code> + <code>btn-call-to-action</code></h3>
