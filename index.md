@@ -1,357 +1,119 @@
 ---
 {
-	"title": "Embedded and interactive content - Scaffolding",
+	"title": "Table - Scaffolding",
 	"language": "en",
-	"altLangPage": "interactive-Content-en.html",
+	"altLangPage": "table-fr.html",
 	"breadcrumbs": [
 		{ "title": "GCWeb home", "link": "https://wet-boew.github.io/GCWeb/index-en.html" }
 	],
-	"dateModified": "2023-09-22"
+	"dateModified": "2023-10-17"
 }
 ---
 
-<h2>The <code>picture</code>, <code>source</code> and <code>img</code> element</h2>
-<h3>Valid image source</h3>
-<picture>
-	<source srcset="img/input-image-sample.jpg">
-	<img src="img/input-image-sample.jpg" alt="Example of a valid image source">
-</picture>
+<h2>The <code>table</code> element</h2>
+
+<table></table>
 <pre>
-<code>&lt;picture&gt;
-&lt;source srcset="img/input-image-sample.jpg"&gt;
-&lt;img src="img/input-image-sample.jpg" alt="Example of a valid image source"&gt;
-&lt;/picture&gt;</code>
+<code>&lt;table&gt;&lt;/table&gt;</code>
 </pre>
 
-<h3>Empty image source</h3>
-<picture>
-	<source srcset="">
-	<img src="" alt="Example of an empty image source">
-</picture>
+<h3>2 rows & 2 columns with the <code>tr</code> and <code>td</code> elements</h3>
+
+<table>
+<tr>
+	<td>Lorem ipsum dolor sit amet</td>
+	<td>Proin pellentesque sodales cursus</td>
+</tr>
+<tr>
+	<td>Nunc dictum felis at dignissim dictum</td>
+	<td>Curabitur ut leo nisi</td>
+</tr>
+</table>
 <pre>
-<code>&lt;picture&gt;
-&lt;source srcset=""&gt;
-&lt;img src="" alt="Example of an empty image source"&gt;
-&lt;/picture&gt;</code>
+<code>&lt;table&gt;
+&lt;<strong>>tr</strong>&gt;
+	&lt;<strong>td</strong>&gt;Lorem ipsum dolor sit amet&lt;<strong>/td</strong>&gt;
+	&lt;<strong>td</strong>&gt;Proin pellentesque sodales cursus&lt;<strong>/td</strong>&gt;
+&lt;<strong>/tr</strong>&gt;
+&lt;<strong>tr</strong>&gt;
+	&lt;<strong>td</strong>&gt;Nunc dictum felis at dignissim dictum&lt;<strong>/td</strong>&gt;
+	&lt;<strong>td</strong>&gt;Curabitur ut leo nisi&lt;<strong>/td</strong>&gt;
+&lt;<strong>/tr</strong>&gt;
+&lt;/table&gt;</code>
 </pre>
 
-<h3>Invalid image source</h3>
-<picture>
-	<source srcset="img/invalid-image.jpg">
-	<img src="img/invalid-image.jpg" alt="Example of an invalid image source">
-</picture>
+<h3>The <code>th</code> element defines a header cell</h3>
+
+<table>
+<tr>
+	<th>Lorem ipsum dolor sit amet</th>
+	<th>Proin pellentesque sodales cursus</th>
+</tr>
+<tr>
+	<td>Nunc dictum felis at dignissim dictum</td>
+	<td>Curabitur ut leo nisi</td>
+</tr>
+</table>
 <pre>
-<code>&lt;picture&gt;
-&lt;source srcset="img/invalid-image.jpg"&gt;
-&lt;img src="img/invalid-image.jpg" alt="Example of an invalid image source"&gt;
-&lt;/picture&gt;</code>
+<code>&lt;table&gt;
+&lt;tr&gt;
+	&lt;th&gt;Lorem ipsum dolor sit amet&lt;/th&gt;
+	&lt;th&gt;Proin pellentesque sodales cursus&lt;/th&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+	&lt;td&gt;Nunc dictum felis at dignissim dictum&lt;/td&gt;
+	&lt;td&gt;Curabitur ut leo nisi&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/table&gt;</code>
 </pre>
 
-<h2>The <code>iframe</code> element</h2>
-<iframe src="https://www.canada.ca/en.html" title="The official website of the Government of Canada" width="700px" height="500px"></iframe>
-<pre><code>&lt;iframe src="https://www.canada.ca/en.html" title="The official website of the Government of Canada" width="700px" height="500px"&gt;&lt;/iframe&gt;</code></pre>
+<h3>Grouping tabular cells with the <code>thead</code>, <code>tbody</code>, <code>tfoot</code>, <code>colgroup</code> and <code>col</code> elements</h3>
 
-<h2>The <code>embed</code> element</h2>
-<p>Keep in mind that most modern browsers have deprecated and removed support for browser plug-ins, so relying upon <embed> is generally not wise if you want your site to be operable on the average user's browser.
-
-Accessibility concerns: Use the title attribute on an embed element to label its content so that people navigating with assistive technology such as a screen reader can understand what it contains. The title's value should concisely describe the embedded content. Without a title, they may not be able to determine what its embedded content is. This context shift can be confusing and time-consuming, especially if the embed element contains interactive content like video or audio.</p>
-
-<h3>An embedded image</h3>
-<embed type="image/jpg" src="img/input-image-sample.jpg" width="300" height="200">
-<pre><code>&lt;embed type="image/jpg" src="img/input-image-sample.jpg" width="300" height="200"&gt;</code></pre>
-
-<h3>An embedded HTML page</h3>
-<embed type="text/html" src="https://www.canada.ca/en.html" width="500" height="200">
-<pre><code>&lt;embed type="text/html" src="https://www.canada.ca/en.html" width="500" height="200"&gt;</code></pre>
-
-<h3>An embedded video</h3>
-<embed type="video/webm" src="https://wet-boew.github.io/wet-boew-attachments/videos/video1-en.webm" width="400" height="300">
-<pre><code>&lt;embed type="video/webm" src="https://wet-boew.github.io/wet-boew-attachments/videos/video1-en.webm" width="400" height="300"&gt;</code></pre>
-
-<h2>The <code>object</code> element</h2>
-<h3>An embedded image</h3>
-<object data="img/input-image-sample.jpg" width="300" height="200"></object>
-<pre><code>&lt;object data="img/input-image-sample.jpg" width="300" height="200"&gt;&lt;/object&gt;</code></pre>
-
-<h3>An embedded HTML page</h3>
-<object data="https://www.canada.ca/en.html" width="500" height="200"></object>
-<pre><code>&lt;object type="text/html" src="https://www.canada.ca/en.html" width="500" height="200"&gt;&lt;/object&gt;</code></pre>
-
-<h3>An embedded video</h3>
-<object data="https://wet-boew.github.io/wet-boew-attachments/videos/video1-en.webm" width="400" height="300"></object>
-<pre><code>&lt;object data="https://wet-boew.github.io/wet-boew-attachments/videos/video1-en.webm" width="400" height="300"&gt;&lt;/object&gt;</code></pre>
-
-<h2>The <code>video</code> element</h2>
-<video controls>
-	<source src="https://wet-boew.github.io/wet-boew-attachments/videos/video1-en.webm" type="video/webm">
-	Your browser does not support the video tag.
-</video>
+<table>
+<colgroup>
+	<col span="1">
+</colgroup>
+<thead>
+	<tr>
+		<th>Lorem ipsum dolor sit amet</th>
+		<th>Proin pellentesque sodales cursus</th>
+	</tr>
+</thead>
+<tbody>
+	<tr>
+		<td>Nunc dictum felis at dignissim dictum</td>
+		<td>Curabitur ut leo nisi</td>
+	</tr>
+</tbody>
+<tfoot>
+	<tr>
+		<td>Felis dictum nunc at dictum dignissim</td>
+		<td>Leo ut curabitur nisi</td>
+	</tr>
+</tfoot>
+</table>
 <pre>
-<code>&lt;video controls&gt;
-&lt;source src="https://wet-boew.github.io/wet-boew-attachments/videos/video1-en.webm" type="video/webm"&gt;
-Your browser does not support the video tag.
-&lt;/video&gt;</code>
-</pre>
-
-<h2>The <code>audio</code> element</h2>
-<audio controls>
-	<source src="https://www.archive.org/download/RideOfTheValkyries/ride_of_the_valkyries_2.mp3" type="audio/mp3"/>
-	<source src="https://www.archive.org/download/RideOfTheValkyries/ride_of_the_valkyries_2.ogg" type="audio/ogg"/>
-	Your browser does not support the audio tag.
-</audio>
-<pre>
-<code>&lt;audio controls&gt;
-&lt;source src="https://www.archive.org/download/RideOfTheValkyries/ride_of_the_valkyries_2.mp3" type="audio/mp3"/&gt;
-&lt;source src="https://www.archive.org/download/RideOfTheValkyries/ride_of_the_valkyries_2.ogg" type="audio/ogg"/&gt;
-Your browser does not support the audio tag.
-&lt;/audio&gt;</code>
-</pre>
-
-<h2>The <code>track</code> element</h2>
-<video controls>
-	<source src="https://wet-boew.github.io/wet-boew-attachments/videos/video2-en.webm" type="video/webm">
-	<source src="https://wet-boew.github.io/wet-boew-attachments/videos/video2-en.mp4" type="video/mp4">
-	<track src="demo/video2-captions-en.xml" kind="captions" data-type="application/ttml+xml" srclang="en" label="English">
-	Your browser does not support the video tag.
-</video>
-<pre>
-<code>&lt;video controls&gt;
-&lt;source src="https://wet-boew.github.io/wet-boew-attachments/videos/video2-en.webm" type="video/webm"&gt;
-&lt;source src="https://wet-boew.github.io/wet-boew-attachments/videos/video2-en.mp4" type="video/mp4"&gt;
-&lt;track src="demo/video2-captions-en.xml" kind="captions" data-type="application/ttml+xml" srclang="en" label="English"&gt;
-Your browser does not support the video tag.
-&lt;/video&gt;</code>
-</pre>
-
-<h2>The <code>map</code> and <code>area</code> elements</h2>
-
-<img src="img/planets.gif" width="145" height="126" alt="Planets"
-usemap="#planetmap">
-
-<map name="planetmap">
-  <area shape="rect" coords="0,0,82,126" href="img/sun.gif" alt="Sun">
-  <area shape="circle" coords="90,58,3" href="img/mercury.gif" alt="Mercury">
-  <area shape="circle" coords="124,58,8" href="img/venus.gif" alt="Venus">
-</map>
-
-<pre>
-<code>&lt;img src="img/planets.gif" width="145" height="126" alt="Planets"
-usemap="#planetmap"&gt;
-
-&lt;map name="planetmap"&gt;
-&lt;area shape="rect" coords="0,0,82,126" href="img/sun.gif" alt="Sun"&gt;
-&lt;area shape="circle" coords="90,58,3" href="img/mercury.gif" alt="Mercury";
-&lt;area shape="circle" coords="124,58,8" href="img/venus.gif" alt="Venus";
-&lt;map name="planetmap"&gt;
-</code>
-</pre>
-
-<h2>The <code>MathML</code> element</h2>
-<h3>The quadratic formula</h3>
-  <p>
-   <math>
-    <mi>x</mi>
-    <mo>=</mo>
-    <mfrac>
-     <mrow>
-      <mo form="prefix">−</mo> <mi>b</mi>
-      <mo>±</mo>
-      <msqrt>
-       <msup> <mi>b</mi> <mn>2</mn> </msup>
-       <mo>−</mo>
-       <mn>4</mn> <mo>⁢</mo> <mi>a</mi> <mo>⁢</mo> <mi>c</mi>
-      </msqrt>
-     </mrow>
-     <mrow>
-      <mn>2</mn> <mo>⁢</mo> <mi>a</mi>
-     </mrow>
-    </mfrac>
-   </math>
-  </p>
-
-<pre>
-<code>&lt;p&gt;
-&lt;math&gt;
-&lt;mi&gt;x&lt;/mi&gt;
-&lt;mo&gt;=&lt;/mo&gt;
-&lt;mfrac&gt;
-&lt;mrow&gt;
-&lt;mo form="prefix"&gt;-&lt;/mo&gt; &lt;mi&gt;b&lt;/mi&gt;
-&lt;mo&gt;±&lt;/mo&gt;
-&lt;msqrt&gt;
-&lt;msup&gt; &lt;mi&gt;b&lt;/mi&gt; &lt;mn&gt;2&lt;/mn&gt; &lt;/msup&gt;
-&lt;mo&gt;-&lt;/mo&gt;
-&lt;mn&gt;4&lt;/mn&gt; &lt;mo&gt;&lt;/mo&gt; &lt;mi&gt;a&lt;/mi&gt; &lt;mo&gt;&lt;/mo&gt; &lt;mi&gt;c&lt;/mi&gt;
-&lt;/msqrt&gt;
-&lt;/mrow&gt;
-&lt;mrow&gt;
-&lt;mn&gt;2&lt;/mn&gt; &lt;mo&gt;&lt;/mo&gt; &lt;mi&gt;a&lt;/mi&gt;
-&lt;/mrow&gt;
-&lt;/mfrac&gt;
-&lt;/math&gt;
-&lt;/p&gt;</code>
-</pre>
-
-<h2>The <code>svg</code> element</h2>
-<svg width="100" height="100">
-  <circle cx="50" cy="50" r="40" stroke="red" stroke-width="5" fill="blue" />
-</svg>
-
-<pre>
-<code>&lt;svg width="100" height="100"&gt;
-&lt;circle cx="50" r="40" stroke="red" stroke-width="5" fill="blue" /&gt;
-&lt;/svg&gt;
-
-</code>
-</pre>
-
-<h2>The <code>details</code> and <code>summary</code> element</h2>
-
-<details>
-<summary>Summary</summary>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sagittis metus ligula, aliquet vulputate ligula molestie nec. Aenean dapibus varius dapibus.</p>
-</details>
-<pre>
-<code>&lt;details&gt;
-&lt;summary&gt;Summary&lt;/summary&gt;
-&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sagittis metus ligula, aliquet vulputate ligula molestie nec. Aenean dapibus varius dapibus.&lt;/p&gt;
-&lt;/details&gt;</code>
-</pre>
-
-<h2>The <code>dialog</code> element</h2>
-
-<dialog open>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</dialog>
-<pre>
-<code>&lt;dialog open&gt;
-Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-&lt;/dialog&gt;</code>
-</pre>
-
-<h3>Draw graphics with the <code>canvas</code> element</h3>
-
-<canvas id="myCanvas">
-Your browser does not support the canvas tag.
-</canvas>
-
-<script>
-	let canvas = document.getElementById("myCanvas");
-	let ctx = canvas.getContext("2d");
-	ctx.fillStyle = "#FF0000";
-	ctx.fillRect(0, 0, 80, 80);
-</script>
-
-<pre>
-<code>&lt;canvas id="myCanvas"&gt;
-Your browser does not support the canvas tag.
-&lt;/canvas&gt;
-
-&lt;script&gt;
-	let canvas = document.getElementById("myCanvas");
-	let ctx = canvas.getContext("2d");
-	ctx.fillStyle = "#FF0000";
-	ctx.fillRect(0, 0, 80, 80);
-&lt;/script&gt;
-</code>
-</pre>
-
-<h3>The <code>template</code> element</h3>
-
-<p>Click the button below to display the hidden content from the template element.</p>
-
-<button onclick="showContent()">Show hidden content</button>
-
-<div id="content"></div>
-
-<template>
-<h2>Hidden Image</h2>
-<img src="img/input-image-sample.jpg" width="300" height="200">
-</template>
-
-<script>
-	function showContent() {
-	let temp = document.getElementsByTagName("template")[0];
-	let clone = temp.content.cloneNode(true);
-	let content = document.getElementById("content");
-	content.appendChild(clone);
-	}
-</script>
-
-<pre>
-<code>&lt;button onclick="showContent()"&gt;
-Show hidden content
-&lt;/button&gt;
-
-&lt;template&gt;
-	&lt;h2&gt;Hidden Image&lt;/h2&gt;
-	&lt;img src="img/input-image-sample.jpg" width="300" height="200"&gt;
-&lt;/template&gt;
-
-&lt;script&gt;
-	function showContent() {
-	let temp = document.getElementsByTagName("template")[0];
-	let clone = temp.content.cloneNode(true);
-	let content = document.getElementById("content");
-	content.appendChild(clone);
-	}
-&lt;/script&gt;
-</code>
-</pre>
-
-<h3>The <code>slot</code> element</h3>
-
-<template id="slotTemplate">
-<h1><slot name="heading"></slot></h1>
-<dl>
-<dt><slot name="term-1"></slot></dt>
-<dd><slot name="description-1"></slot></dd>
-<dt><slot name="term-2"></slot></dt>
-<dd><slot name="description-2"></slot></dd>
-</dl>
-</template>
-
-<div class="slotDiv">
-<span slot="heading">Lorem ipsum</span>
-<span slot="term-1">Dolor sit amet</span>
-<span slot="description-1">Aliquam vel consectetur erat</span>
-<span slot="term-2">Morbi vitae odio orci</span>
-<span slot="description-2">Cras neque ligula</span>
-</div>
-
-<script>
-var dlTemplate = document.querySelector('#slotTemplate').content;
-var div = document.querySelector('.slotDiv');
-
-div.attachShadow({  mode: 'open' }).appendChild(
-dlTemplate.cloneNode(true));
-</script>
-
-<pre>
-<code>&lt;template&gt;
-	&lt;h1&gt;&lt;slot name="heading"&gt;&lt;/slot&gt;&lt;/h1&gt;
-	&lt;dl&gt;
-		&lt;dt&gt;&lt;slot name="term-1"&gt;&lt;/slot&gt;&lt;/dt&gt;
-		&lt;dd&gt;&lt;slot name="description-1"&gt;&lt;/slot&gt;&lt;/dd&gt;
-		&lt;dt&gt;&lt;slot name="term-2"&gt;&lt;/slot&gt;&lt;/dt&gt;
-		&lt;dd&gt;&lt;slot name="description-2"&gt;&lt;/slot&gt;&lt;/dd&gt;
-	&lt;/dl&gt;
-&lt;/template&gt;
-
-&lt;div class="slotDiv"&gt;
-	&lt;span slot="heading"&gt;Lorem ipsum&lt;/span&gt;
-	&lt;span slot="term-1"&gt;Dolor sit amet&lt;/span&gt;
-	&lt;span slot="description-1"&gt;Aliquam vel consectetur erat&lt;/span&gt;
-	&lt;span slot="term-2"&gt;Morbi vitae odio orci&lt;/span&gt;
-	&lt;span slot="description-2"&gt;Cras neque ligula&lt;/span&gt;
-&lt;/div&gt;
-
-&lt;script&gt;
-	var dlTemplate = document.querySelector('template').content;
-	var divs = document.querySelectorAll('.slotDiv');
-
-	divs.forEach(function(div){
-	div.attachShadow({  mode: 'open' }).appendChild(
-dlTemplate.cloneNode(true))
-});
-&lt;/script&gt;
-</code>
+<code>&lt;table&gt;
+&lt;colgroup&gt;
+&lt;col span="1"&gt;
+&lt;/colgroup&gt;
+&lt;thead&gt;
+	&lt;tr&gt;
+		&lt;th&gt;Lorem ipsum dolor sit amet&lt;/th&gt;
+		&lt;th&gt;Proin pellentesque sodales cursus&lt;/th&gt;
+	&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+	&lt;tr&gt;
+		&lt;td&gt;Nunc dictum felis at dignissim dictum&lt;/td&gt;
+		&lt;td&gt;Curabitur ut leo nisi&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;tfoot&gt;
+	&lt;tr&gt;
+		&lt;td&gt;Felis dictum nunc at dictum dignissim&lt;/td&gt;
+		&lt;td&gt;Leo ut curabitur nisi&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/tfoot&gt;
+&lt;/table&gt;</code>
 </pre>
