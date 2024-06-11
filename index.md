@@ -1,39 +1,73 @@
 ---
 {
-	"title": "Typography",
-	"language": "en",
-	"altLangPage": "typographie.html",
+	"title": "Introduction block with image",
+	"language": "fr",
+	"altLangPage": "gc-intro-image-fr.html",
 	"breadcrumbs": [
 		{ "title": "GCWeb home", "link": "https://wet-boew.github.io/GCWeb/index-en.html" }
 	],
-	"dateModified": "2023-08-24"
+	"dateModified": "2024-06-11"
 }
 ---
 
-<h1>Headings</h1>
-<h1>This is an h1 heading element</h1>
-<h2>This is an h2 heading element</h2>
-<h3>This is an h3 heading element</h3>
-<h4>This is an h4 heading element</h4>
-<h5>This is an h5 heading element</h5>
-<h6>This is an h6 heading element</h6>
-<pre><code>
-&lt;h1&gt;This is an h1 heading element &lt;/h1&gt;
-&lt;h2&gt;This is an h2 heading element &lt;/h2&gt;
-&lt;h3&gt;This is an h3 heading element &lt;/h3&gt;
-&lt;h4&gt;This is an h4 heading element &lt;/h4&gt;
-&lt;h5&gt;This is an h5 heading element &lt;/h5&gt;
-&lt;h6&gt;This is an h6 heading element &lt;/h6&gt;
-</code></pre>
+<div class="wb-prettify all-pre"></div>
 
-<h1>Paragraph</h1>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-<pre><code>
-&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p&gt;
-</code></pre>
+<div class="bg-center bg-cover" data-bgimg-srcset="https://wet-boew.github.io/vocab/wb/utilities#no-image 991w, img/ip-cover-image-1200x726.jpg 992w">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-7">
+				<h1 property="name" id="wb-cont">{% if page.language == "en" %}Introduction block with full-width image{% else %}Bloc d'introduction avec image pleine largeur{% endif %}</h1>
+				<p>{% if page.language == "en" %}The introduction block pattern introduces the content of a landing page.{% else %}La configuration de conception du bloc d'introduction introduit le contenu d'une page de destination.{% endif %}</p>
+				<p><a class="btn btn-call-to-action" href="#">{% if page.language == "en" %}Supertask button{% else %}Bouton de super-tâche{% endif %}</a></p>
+			</div>
+		</div>
+	</div>
+</div>
 
-<h1>Limited width content</h1>
-<p>For an example of content with limited width, visit the following link: <a href="https://wet-boew.github.io/GCWeb/templates/content-limit-en.html">Content page - Limited width content</a></p>
+<div class="container">
+	<h2>Code sample</h2>
+	{% highlight html %}<div class="bg-center bg-cover" data-bgimg-srcset="https://wet-boew.github.io/vocab/wb/utilities#no-image 991w, img/ip-cover-image-1200x726.jpg 992w">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-7">
+				<h1 property="name" id="wb-cont">{% if page.language == "en" %}Introduction block with full-width image{% else %}Bloc d'introduction avec image pleine largeur{% endif %}</h1>
+				<p>{% if page.language == "en" %}The introduction block pattern introduces the content of a landing page.{% else %}La configuration de conception du bloc d'introduction introduit le contenu d'une page de destination.{% endif %}</p>
+				<p><a class="btn btn-call-to-action" href="#">{% if page.language == "en" %}Supertask button{% else %}Bouton de super-tâche{% endif %}</a></p>
+			</div>
+		</div>
+	</div>
+</div>{% endhighlight %}
+</div>
 
-<h1>Text level semantics</h1>
-<p>For an example of text-level semantics which showcases links and grouping related elements, visit the following link: <a href="https://wet-boew.github.io/GCWeb/common/text-level-semantics/text-level-semantics.html">Text level semantics</a></p>
+<div>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-6">
+				<h1 property="name" id="wb-cont">{% if page.language == "en" %}Introduction block with half-width image{% else %}Bloc d'introduction avec image demi largeur{% endif %}</h1>
+				<p>{% if page.language == "en" %}The introduction block pattern introduces the content of a landing page.{% else %}La configuration de conception du bloc d'introduction introduit le contenu d'une page de destination.{% endif %}</p>
+				<p><a class="btn btn-call-to-action" href="#">{% if page.language == "en" %}Supertask button{% else %}Bouton de super-tâche{% endif %}</a></p>
+			</div>
+			<div class="col-md-6 mrgn-tp-sm hidden-sm hidden-xs">
+					<img src="img/825x200.jpg" alt="" class="gc-intro half-width-image"/>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="container">
+	<h2>Code sample</h2>
+	{% highlight html %}<div>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-6">
+				<h1 property="name" id="wb-cont">{% if page.language == "en" %}Introduction block with half-width image{% else %}Bloc d'introduction avec image demi largeur{% endif %}</h1>
+				<p>{% if page.language == "en" %}The introduction block pattern introduces the content of a landing page.{% else %}La configuration de conception du bloc d'introduction introduit le contenu d'une page de destination.{% endif %}</p>
+				<p><a class="btn btn-call-to-action" href="#">{% if page.language == "en" %}Supertask button{% else %}Bouton de super-tâche{% endif %}</a></p>
+			</div>
+			<div class="col-md-6 mrgn-tp-sm hidden-sm hidden-xs">
+					<img src="img/banner-520x200.png" alt="" class="pull-right img-responsive thumbnail"/>
+			</div>
+		</div>
+	</div>
+</div>{% endhighlight %}
+</div>
